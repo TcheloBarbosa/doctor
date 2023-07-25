@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_doctor_all,doctor_access_all,model_doctor,,1,1,1,1
+access_doctor_wizard_all,doctor_wizard_access_all,model_doctor_wizard,,1,1,1,1

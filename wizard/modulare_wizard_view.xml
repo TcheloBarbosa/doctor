@@ -1,0 +1,35 @@
+<odoo>
+    <data>
+        <record id="view_doctor_wizard_form" model="ir.ui.view">
+            <field name="name">doctor.wizard.form</field>
+            <field name="model">doctor.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Doctor Wizard">
+                    <sheet>
+                        <field name="line_ids" nolabel="1">
+                            <tree editable="bottom">
+                                <field name="id"/>
+                                <field name="nome"/>
+                                <field name="senha"/>
+                                <field name="alinhamento"/>
+                            </tree>
+                        </field>
+                    </sheet>
+                    <footer>
+                        <button name="get_external_data" string="Get Data" type="object" class="btn-primary"/>
+                        <button string="Close" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_show_doctor_wizard" model="ir.actions.act_window">
+            <field name="name">Show Doctor Wizard</field>
+            <field name="res_model">doctor.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem id="menu_doctor_wizard" name="Doctor Wizard" action="action_show_doctor_wizard" />
+    </data>
+</odoo>
