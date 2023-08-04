@@ -1,0 +1,303 @@
+<odoo>
+    <data>
+        <!-- Define the view -->
+        <record model="ir.ui.view" id="view_pacientes_contas_procedimentos_tree">
+            <field name="name">pacientes.contas.procedimentos.tree</field>
+            <field name="model">pacientes.contas.procedimentos</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="conta"/>
+                    <field name="linha"/>
+                    <field name="convenio_id"/>
+                    <field name= "medico_id"/>
+                    <field name="data"/>
+                    <field name="horainicial"/>
+                    <field name="horafinal"/>
+                    <field name="usuario"/>
+                    <field name="codigoamb"/>
+                    <field name="descricaoamb"/>
+                    <field name="quantidade"/>
+                    <field name="honorario"/>
+                    <field name="valorglosa"/>
+                    <field name="solicitante"/>
+                    <!-- Campos invisíveis -->
+                    <field name="indice" invisible="1"/>
+                    <field name="indicehonorariosamb" invisible="1"/>
+                    <field name="indicecustooperacionalamb" invisible="1"/>
+                    <field name="indicecustooperacionalcbhpm" invisible="1"/>
+                    <field name="indicem2filme" invisible="1"/>
+                    <field name="indiceportecbhpm" invisible="1"/>
+                    <field name="local" invisible="1"/>
+                    <field name="percusuario_1" invisible="1"/>
+                    <field name="percusuario_2" invisible="1"/>
+                    <field name="percusuario_3" invisible="1"/>
+                    <field name="percusuario_4" invisible="1"/>
+                    <field name="funcao" invisible="1"/>
+                    <field name="quantidadesolicitada" invisible="1"/>
+                    <field name="quantidadeautorizada" invisible="1"/>
+                    <field name="tipoguia" invisible="1"/>
+                    <field name="guia" invisible="1"/>
+                    <field name="guiacancelada" invisible="1"/>
+                    <field name="tipoprocedimento" invisible="1"/>
+                    <field name="inc" invisible="1"/>
+                    <field name="m2filme" invisible="1"/>
+                    <field name="custooperacional" invisible="1"/>
+                    <field name="porteprocedimento" invisible="1"/>
+                    <field name="porteprocedimentoindice" invisible="1"/>
+                    <field name="numauxiliares" invisible="1"/>
+                    <field name="porteanestesico" invisible="1"/>
+                    <field name="porteanestesicoindice" invisible="1"/>
+                    <field name="cirurgiabilateral" invisible="1"/>
+                    <field name="cirurgiamesmavia" invisible="1"/>
+                    <field name="cirurgiaviadiferente" invisible="1"/>
+                    <field name="urgencia" invisible="1"/>
+                    <field name="dhe" invisible="1"/>
+                    <field name="tecnicautilizada" invisible="1"/>
+                    <field name="apartamento" invisible="1"/>
+                    <field name="solicitado" invisible="1"/>
+                    <field name="pendencia" invisible="1"/>
+                    <field name="realizado" invisible="1"/>
+                    <field name="glosado" invisible="1"/>
+                    <field name="diferenca" invisible="1"/>
+                    <field name="valordiferenca" invisible="1"/>
+                    <field name="valortotal" invisible="1"/>
+                    <field name="solicitante_nome" invisible="1"/>
+                    <field name="solicitante_especialidade" invisible="1"/>
+                    <field name="solicitante_conselhotipo" invisible="1"/>
+                    <field name="solicitante_conselhonumero" invisible="1"/>
+                    <field name="solicitante_conselhouf" invisible="1"/>
+                    <field name="protocoloenvio" invisible="1"/>
+                    <field name="loteenvio" invisible="1"/>
+                    <field name="situacaotransacao" invisible="1"/>
+                    <field name="autorizacaotransacao" invisible="1"/>
+                    <field name="tickettransacao" invisible="1"/>
+                    <field name="mensagemtransacao" invisible="1"/>
+                    <field name="data_rec" invisible="1"/>
+                    <field name="valor_rec" invisible="1"/>
+                    <field name="situacao_rec" invisible="1"/>
+                    <field name="repassado_rec" invisible="1"/>
+                    <field name="recebido_rec" invisible="1"/>
+                    <field name="codigotuss" invisible="1"/>
+                    <field name="descricaotuss" invisible="1"/>
+                    <field name="valorrecursado" invisible="1"/>
+                    <field name="valorrecuperado" invisible="1"/>
+                    <field name="funcaorepasse" invisible="1"/>
+                    <field name="numrepasse" invisible="1"/>
+                    <field name="tipovalorrepasse_hono" invisible="1"/>
+                    <field name="valoraplicadorepasse_hono" invisible="1"/>
+                    <field name="valorrepasse" invisible="1"/>
+                    <field name="previa" invisible="1"/>
+                    <field name="tppagamento" invisible="1"/>
+                    <field name="valorimpostosrepasse" invisible="1"/>
+                    <field name="valorrepasse_hono" invisible="1"/>
+                    <field name="valorimpostosrepasse_hono" invisible="1"/>
+                    <field name="tipovalorrepasse_custoop" invisible="1"/>
+                    <field name="valoraplicadorepasse_custoop" invisible="1"/>
+                    <field name="valorrepasse_custoop" invisible="1"/>
+                    <field name="valorimpostosrepasse_custoop" invisible="1"/>
+                    <field name="tipovalorrepasse_m2filme" invisible="1"/>
+                    <field name="valoraplicadorepasse_m2filme" invisible="1"/>
+                    <field name="valorrepasse_m2filme" invisible="1"/>
+                    <field name="valorimpostosrepasse_m2filme" invisible="1"/>
+                    <field name="valorprocedimento_hono" invisible="1"/>
+                    <field name="valorprocedimento_m2filme" invisible="1"/>
+                    <field name="valorprocedimento_custoop" invisible="1"/>
+                    <field name="linharefrepasse" invisible="1"/>
+                    <field name="tiss3_numeroguiaoperadora" invisible="1"/>
+                    <field name="tiss3_tabela" invisible="1"/>
+                    <field name="codigoespecifico" invisible="1"/>
+                    <field name="descricaoespecifica" invisible="1"/>
+                    <field name="naoincluirrepasse" invisible="1"/>
+                    <field name="procedimentosomenterepasse" invisible="1"/>
+                    <field name="procedimentoassociado" invisible="1"/>
+                    <field name="linhaassociada" invisible="1"/>
+                    <field name="contaassociada" invisible="1"/>
+                    <field name="tratamentofinalizado" invisible="1"/>
+                    <field name="valortotalsemredacresc" invisible="1"/>
+                    <field name="valortotalsomenterepasse" invisible="1"/>
+                    <field name="anotacoes" invisible="1"/>
+                    <field name="procedimentoassociavel" invisible="1"/>
+                    <field name="recebeassociacao" invisible="1"/>
+                    <field name="naorepassar" invisible="1"/>
+                    <field name="fatorcorrecaohonorario" invisible="1"/>
+                    <field name="fatorcorrecaoco" invisible="1"/>
+                    <field name="usuarioespecialidade" invisible="1"/>
+                    <field name="usuarioconselhotipo" invisible="1"/>
+                    <field name="usuarioconselhonumero" invisible="1"/>
+                    <field name="usuarioconselhouf" invisible="1"/>
+                    <field name="tipodiferenca" invisible="1"/>
+                    <field name="percdiferenca" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="view_pacientes_contas_procedimentos_form">
+            <field name="name">pacientes.contas.procedimentos.form</field>
+            <field name="model">pacientes.contas.procedimentos</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="conta"/>
+                            <field name="linha"/>
+                            <field name="data"/>
+                            <field name="horainicial"/>
+                            <field name="horafinal"/>
+                            <field name="indice"/>
+                            <field name="indicehonorariosamb"/>
+                            <field name="indicecustooperacionalamb"/>
+                            <field name="indicecustooperacionalcbhpm"/>
+                            <field name="indicem2filme"/>
+                            <field name="indiceportecbhpm"/>
+                            <field name="local"/>
+                            <field name="usuario"/>
+                            <field name="percusuario_1"/>
+                            <field name="percusuario_2"/>
+                            <field name="percusuario_3"/>
+                            <field name="percusuario_4"/>
+                            <field name="funcao"/>
+                            <field name="codigoamb"/>
+                            <field name="descricaoamb"/>
+                            <field name="quantidade"/>
+                            <field name="quantidadesolicitada"/>
+                            <field name="quantidadeautorizada"/>
+                            <field name="tipoguia"/>
+                            <field name="guia"/>
+                            <field name="guiacancelada"/>
+                            <field name="tipoprocedimento"/>
+                            <field name="inc"/>
+                            <field name="m2filme"/>
+                            <field name="custooperacional"/>
+                            <field name="porteprocedimento"/>
+                            <field name="porteprocedimentoindice"/>
+                            <field name="honorario"/>
+                            <field name="numauxiliares"/>
+                            <field name="porteanestesico"/>
+                            <field name="porteanestesicoindice"/>
+                            <field name="cirurgiabilateral"/>
+                            <field name="cirurgiamesmavia"/>
+                            <field name="cirurgiaviadiferente"/>
+                            <field name="urgencia"/>
+                            <field name="dhe"/>
+                            <field name="tecnicautilizada"/>
+                            <field name="apartamento"/>
+                            <field name="solicitado"/>
+                            <field name="pendencia"/>
+                            <field name="realizado"/>
+                            <field name="glosado"/>
+                            <field name="valorglosa"/>
+                            <field name="diferenca"/>
+                            <field name="valordiferenca"/>
+                            <field name="valortotal"/>
+                            <field name="solicitante"/>
+                            <field name="solicitante_nome"/>
+                            <field name="solicitante_especialidade"/>
+                            <field name="solicitante_conselhotipo"/>
+                            <field name="solicitante_conselhonumero"/>
+                            <field name="solicitante_conselhouf"/>
+                            <field name="protocoloenvio"/>
+                            <field name="loteenvio"/>
+                            <field name="situacaotransacao"/>
+                            <field name="autorizacaotransacao"/>
+                            <field name="tickettransacao"/>
+                            <field name="mensagemtransacao"/>
+                            <field name="data_rec"/>
+                            <field name="valor_rec"/>
+                            <field name="situacao_rec"/>
+                            <field name="repassado_rec"/>
+                            <field name="recebido_rec"/>
+                            <field name="codigotuss"/>
+                            <field name="descricaotuss"/>
+                            <field name="valorrecursado"/>
+                            <field name="valorrecuperado"/>
+                            <field name="funcaorepasse"/>
+                            <field name="numrepasse"/>
+                            <field name="tipovalorrepasse_hono"/>
+                            <field name="valoraplicadorepasse_hono"/>
+                            <field name="valorrepasse"/>
+                            <field name="previa"/>
+                            <field name="tppagamento"/>
+                            <field name="valorimpostosrepasse"/>
+                            <field name="valorrepasse_hono"/>
+                            <field name="valorimpostosrepasse_hono"/>
+                            <field name="tipovalorrepasse_custoop"/>
+                            <field name="valoraplicadorepasse_custoop"/>
+                            <field name="valorrepasse_custoop"/>
+                            <field name="valorimpostosrepasse_custoop"/>
+                            <field name="tipovalorrepasse_m2filme"/>
+                            <field name="valoraplicadorepasse_m2filme"/>
+                            <field name="valorrepasse_m2filme"/>
+                            <field name="valorimpostosrepasse_m2filme"/>
+                            <field name="valorprocedimento_hono"/>
+                            <field name="valorprocedimento_m2filme"/>
+                            <field name="valorprocedimento_custoop"/>
+                            <field name="linharefrepasse"/>
+                            <field name="tiss3_numeroguiaoperadora"/>
+                            <field name="tiss3_tabela"/>
+                            <field name="codigoespecifico"/>
+                            <field name="descricaoespecifica"/>
+                            <field name="naoincluirrepasse"/>
+                            <field name="procedimentosomenterepasse"/>
+                            <field name="procedimentoassociado"/>
+                            <field name="linhaassociada"/>
+                            <field name="contaassociada"/>
+                            <field name="tratamentofinalizado"/>
+                            <field name="valortotalsemredacresc"/>
+                            <field name="valortotalsomenterepasse"/>
+                            <field name="anotacoes"/>
+                            <field name="procedimentoassociavel"/>
+                            <field name="recebeassociacao"/>
+                            <field name="naorepassar"/>
+                            <field name="fatorcorrecaohonorario"/>
+                            <field name="fatorcorrecaoco"/>
+                            <field name="usuarioespecialidade"/>
+                            <field name="usuarioconselhotipo"/>
+                            <field name="usuarioconselhonumero"/>
+                            <field name="usuarioconselhouf"/>
+                            <field name="tipodiferenca"/>
+                            <field name="percdiferenca"/>
+                        </group>
+                    </sheet>
+                    <!-- Add a button to call the function get_external_data -->
+                    <footer>
+                        <button name="get_external_data"
+                                string="Carregar Dados Externos"
+                                type="object"
+                                class="oe_highlight"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <!-- Define the action to show the tree view -->
+        <record model="ir.actions.act_window" id="action_pacientes_contas_procedimentos_tree">
+            <field name="name">Pacientes Contas Procedimentos (Tree View)</field>
+            <field name="res_model">pacientes.contas.procedimentos</field>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_pacientes_contas_procedimentos_tree"/>
+            <field name="context">{'show_invisible': 1}</field>
+        </record>
+
+        <!-- Define the action to show the form view -->
+        <record model="ir.actions.act_window" id="action_pacientes_contas_procedimentos_form">
+            <field name="name">Pacientes Contas Procedimentos (Form View)</field>
+            <field name="res_model">pacientes.contas.procedimentos</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_pacientes_contas_procedimentos_form"/>
+            <field name="target">new</field>
+            <!-- Set this form view as the default view for the model -->
+            <field name="context">{"form_view_ref": "view_pacientes_contas_procedimentos_form"}</field>
+        </record>
+
+        <!-- Define the menu item to access the views -->
+        <menuitem id="menu_pacientes_contas_procedimentos" name="Pacientes Contas Procedimentos" parent="menu_doctor"
+                  sequence="20"/>
+        <menuitem id="menu_pacientes_contas_procedimentos_tree" name="Pacientes Contas Procedimentos (Tree View)"
+                  parent="menu_pacientes_contas_procedimentos" action="action_pacientes_contas_procedimentos_tree"
+                  sequence="10"/>
+        <menuitem id="menu_pacientes_contas_procedimentos_form" name="Pacientes Contas Procedimentos (Form View)"
+                  parent="menu_pacientes_contas_procedimentos" action="action_pacientes_contas_procedimentos_form"
+                  sequence="20"/>
+    </data>
+</odoo>

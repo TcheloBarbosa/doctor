@@ -1,0 +1,62 @@
+<!-- views/especificas_view.xml -->
+<odoo>
+    <data>
+        <!-- Form View -->
+        <record id="view_especificas_form" model="ir.ui.view">
+            <field name="name">especificas.form</field>
+            <field name="model">especificas</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <sheet>
+                        <notebook>
+                            <page string="Parâmetros Gerais">
+                                <group>
+                                    <field name="num_consulta_red" string="Número de Consultas para Redução"/>
+                                    <field name="valor_percentual" string="Percentual da Redução"/>
+                                    <field name="repasse_direto" string="Há valor de repasse?"/>
+                                    <field name="valor_percentual_rep" string="Percentual do repasse:"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <notebook>
+                        <page string="Usuário de Destino da Regra"
+                              attrs="{'invisible': [('repasse_direto', '!=', True)]}">
+                            <group>
+                                <field name="usuario_destino"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_especificas_tree" model="ir.ui.view">
+            <field name="name">especificas.tree</field>
+            <field name="model">especificas</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="num_consulta_red" string="Número de Consultas para Redução"/>
+                    <field name="valor_percentual" string="Percentual da Redução"/>
+                    <field name="repasse_direto" string="Há valor de repasse?"/>
+                    <field name="valor_percentual_rep" string="Percentual do repasse:"/>
+                    <field name="usuario_destino" string="Usuário de Destino"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_especificas" model="ir.actions.act_window">
+            <field name="name">Específicas</field>
+            <field name="res_model">especificas</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Crie a primeira específica
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_especificas_list" name="Específicas" parent="menu_regras" action="action_especificas"/>
+    </data>
+</odoo>

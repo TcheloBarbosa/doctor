@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="convenios_165" model="convenios">
+            <field name="nome">ZZZZZUNIMED GUARULHOS INTERCAMBIO (CIRURGIA)</field>
+            <field name="codigo_prodoctor">165</field>
+        </record>
+        <record id="convenios_163" model="convenios">
+            <field name="nome">ZZZZZUNIMED GUARULHOS INTER (SADT)</field>
+            <field name="codigo_prodoctor">163</field>
+        </record>
+        <record id="convenios_74" model="convenios">
+            <field name="nome">ZZZZZDIX (UNIFI)</field>
+            <field name="codigo_prodoctor">74</field>
+        </record>
+        <record id="convenios_75" model="convenios">
+            <field name="nome">ZZZZZAMIL (UNIFI)</field>
+            <field name="codigo_prodoctor">75</field>
+        </record>
+        <record id="convenios_150" model="convenios">
+            <field name="nome">ZZZZZ UNIMED FESP (SADT) INTERCAMBIO</field>
+            <field name="codigo_prodoctor">150</field>
+        </record>
+        <record id="convenios_149" model="convenios">
+            <field name="nome">ZZZZZ UNIMED FESP (SADT)</field>
+            <field name="codigo_prodoctor">149</field>
+        </record>
+        <record id="convenios_148" model="convenios">
+            <field name="nome">ZZZZZ UNIMED FESP (INTERCAMBIO)</field>
+            <field name="codigo_prodoctor">148</field>
+        </record>
+        <record id="convenios_152" model="convenios">
+            <field name="nome">ZZZZZ UNIMED FESP (FISIO) INTERCAMBIO</field>
+            <field name="codigo_prodoctor">152</field>
+        </record>
+        <record id="convenios_151" model="convenios">
+            <field name="nome">ZZZZZ UNIMED FESP (FISIO)</field>
+            <field name="codigo_prodoctor">151</field>
+        </record>
+        <record id="convenios_177" model="convenios">
+            <field name="nome">ZZZZZ UNIMED FESP (CIRURGIA) INTERCAMBIO</field>
+            <field name="codigo_prodoctor">177</field>
+        </record>
+        <record id="convenios_153" model="convenios">
+            <field name="nome">ZZZZZ UNIMED FESP (CIRURGIA)</field>
+            <field name="codigo_prodoctor">153</field>
+        </record>
+        <record id="convenios_147" model="convenios">
+            <field name="nome">ZZZZZ UNIMED FESP</field>
+            <field name="codigo_prodoctor">147</field>
+        </record>
+        <record id="convenios_79" model="convenios">
+            <field name="nome">ZZZZZ SABESPREV (UNIFI)</field>
+            <field name="codigo_prodoctor">79</field>
+        </record>
+        <record id="convenios_105" model="convenios">
+            <field name="nome">ZZZZZ PETROBRAS DISTRIBUIDORA</field>
+            <field name="codigo_prodoctor">105</field>
+        </record>
+        <record id="convenios_78" model="convenios">
+            <field name="nome">ZZZZZ MULTICARE (UNIFI)</field>
+            <field name="codigo_prodoctor">78</field>
+        </record>
+        <record id="convenios_127" model="convenios">
+            <field name="nome">ZZZZZ MAPFRE SAÚDE - (FISIO)</field>
+            <field name="codigo_prodoctor">127</field>
+        </record>
+        <record id="convenios_126" model="convenios">
+            <field name="nome">ZZZZZ MAPFRE SAÚDE - (CIRURGIA)</field>
+            <field name="codigo_prodoctor">126</field>
+        </record>
+        <record id="convenios_125" model="convenios">
+            <field name="nome">ZZZZZ MAPFRE SAÚDE</field>
+            <field name="codigo_prodoctor">125</field>
+        </record>
+        <record id="convenios_36" model="convenios">
+            <field name="nome">ZZZZZ LIFE EMPRESARIAL</field>
+            <field name="codigo_prodoctor">36</field>
+        </record>
+        <record id="convenios_65" model="convenios">
+            <field name="nome">ZZZZZ ABET</field>
+            <field name="codigo_prodoctor">65</field>
+        </record>
+        <record id="convenios_164" model="convenios">
+            <field name="nome">ZZZZUNIMED GUARULHOS INTERCAMBIO (FISIO)</field>
+            <field name="codigo_prodoctor">164</field>
+        </record>
+        <record id="convenios_160" model="convenios">
+            <field name="nome">ZZZZUNIMED GUARULHOS (SADT)</field>
+            <field name="codigo_prodoctor">160</field>
+        </record>
+        <record id="convenios_159" model="convenios">
+            <field name="nome">ZZZZUNIMED GUARULHOS (INTERCAMBIO)</field>
+            <field name="codigo_prodoctor">159</field>
+        </record>
+        <record id="convenios_161" model="convenios">
+            <field name="nome">ZZZZUNIMED GUARULHOS (FISIO)</field>
+            <field name="codigo_prodoctor">161</field>
+        </record>
+        <record id="convenios_162" model="convenios">
+            <field name="nome">ZZZZUNIMED GUARULHOS (CIRURGIA)</field>
+            <field name="codigo_prodoctor">162</field>
+        </record>
+        <record id="convenios_158" model="convenios">
+            <field name="nome">ZZZZUNIMED GUARULHOS</field>
+            <field name="codigo_prodoctor">158</field>
+        </record>
+        <record id="convenios_82" model="convenios">
+            <field name="nome">ZZZZMEDIAL SUPERIOR</field>
+            <field name="codigo_prodoctor">82</field>
+        </record>
+        <record id="convenios_175" model="convenios">
+            <field name="nome">ZZZZMEDIAL (CIRURGIA)</field>
+            <field name="codigo_prodoctor">175</field>
+        </record>
+        <record id="convenios_71" model="convenios">
+            <field name="nome">zzzUNIMED PAULISTANA (SIGMA, ORIGINAL, BÁSICO)</field>
+            <field name="codigo_prodoctor">71</field>
+        </record>
+        <record id="convenios_72" model="convenios">
+            <field name="nome">zzzUNIMED PAULISTANA (PLENO)</field>
+            <field name="codigo_prodoctor">72</field>
+        </record>
+        <record id="convenios_73" model="convenios">
+            <field name="nome">zzzUNIMED PAULISTANA (MASTER)</field>
+            <field name="codigo_prodoctor">73</field>
+        </record>
+        <record id="convenios_3" model="convenios">
+            <field name="nome">zzzUNIMED PAULISTANA</field>
+            <field name="codigo_prodoctor">3</field>
+        </record>
+        <record id="convenios_97" model="convenios">
+            <field name="nome">zzzUNIMED (SIGMA,ORIGNAL,BASICO) INTERCAMBIO FISIO</field>
+            <field name="codigo_prodoctor">97</field>
+        </record>
+        <record id="convenios_95" model="convenios">
+            <field name="nome">zzzUNIMED (SIGMA, ORIGINAL,BASICO) FISIO</field>
+            <field name="codigo_prodoctor">95</field>
+        </record>
+        <record id="convenios_94" model="convenios">
+            <field name="nome">zzzUNIMED (PLENO) FISIO</field>
+            <field name="codigo_prodoctor">94</field>
+        </record>
+        <record id="convenios_93" model="convenios">
+            <field name="nome">zzzUNIMED (MASTER) FISIO</field>
+            <field name="codigo_prodoctor">93</field>
+        </record>
+        <record id="convenios_61" model="convenios">
+            <field name="nome">zzzTRASMONTANO</field>
+            <field name="codigo_prodoctor">61</field>
+        </record>
+        <record id="convenios_80" model="convenios">
+            <field name="nome">ZZZMEDIAL INTERMEDIÁRIO</field>
+            <field name="codigo_prodoctor">80</field>
+        </record>
+        <record id="convenios_110" model="convenios">
+            <field name="nome">ZZZMEDIAL (FISIO)</field>
+            <field name="codigo_prodoctor">110</field>
+        </record>
+        <record id="convenios_109" model="convenios">
+            <field name="nome">ZZZLINCX (FISIO)</field>
+            <field name="codigo_prodoctor">109</field>
+        </record>
+        <record id="convenios_176" model="convenios">
+            <field name="nome">ZZZLINCX (CIRURGIA)</field>
+            <field name="codigo_prodoctor">176</field>
+        </record>
+        <record id="convenios_102" model="convenios">
+            <field name="nome">ZZZDIX INTERMEDIÁRIO</field>
+            <field name="codigo_prodoctor">102</field>
+        </record>
+        <record id="convenios_106" model="convenios">
+            <field name="nome">ZZZDIX (FISIO)</field>
+            <field name="codigo_prodoctor">106</field>
+        </record>
+        <record id="convenios_40" model="convenios">
+            <field name="nome">ZZZBOM CLIMA</field>
+            <field name="codigo_prodoctor">40</field>
+        </record>
+        <record id="convenios_108" model="convenios">
+            <field name="nome">ZZZBLUE LIFE (FISIO)</field>
+            <field name="codigo_prodoctor">108</field>
+        </record>
+        <record id="convenios_111" model="convenios">
+            <field name="nome">ZZZAMIL CIRURGIAS</field>
+            <field name="codigo_prodoctor">111</field>
+        </record>
+        <record id="convenios_1" model="convenios">
+            <field name="nome">ZZDIX SUPERIOR</field>
+            <field name="codigo_prodoctor">1</field>
+        </record>
+        <record id="convenios_92" model="convenios">
+            <field name="nome">ZZDIX HOSPITAL</field>
+            <field name="codigo_prodoctor">92</field>
+        </record>
+        <record id="convenios_121" model="convenios">
+            <field name="nome">ZZDIX (CIRURGIA)</field>
+            <field name="codigo_prodoctor">121</field>
+        </record>
+        <record id="convenios_137" model="convenios">
+            <field name="nome">ZZBOM CLIMA (CIRURGIA)</field>
+            <field name="codigo_prodoctor">137</field>
+        </record>
+        <record id="convenios_103" model="convenios">
+            <field name="nome">ZZBLUE LIFE</field>
+            <field name="codigo_prodoctor">103</field>
+        </record>
+        <record id="convenios_107" model="convenios">
+            <field name="nome">ZZAMIL(FISIO)</field>
+            <field name="codigo_prodoctor">107</field>
+        </record>
+        <record id="convenios_76" model="convenios">
+            <field name="nome">ZZAMIL PLANOS (UNIFI)</field>
+            <field name="codigo_prodoctor">76</field>
+        </record>
+        <record id="convenios_157" model="convenios">
+            <field name="nome">zUNIMED RIO (FISIO)</field>
+            <field name="codigo_prodoctor">157</field>
+        </record>
+        <record id="convenios_156" model="convenios">
+            <field name="nome">zUNIMED RIO (CIRURGIA)</field>
+            <field name="codigo_prodoctor">156</field>
+        </record>
+        <record id="convenios_155" model="convenios">
+            <field name="nome">zUNIMED RIO</field>
+            <field name="codigo_prodoctor">155</field>
+        </record>
+        <record id="convenios_146" model="convenios">
+            <field name="nome">ZNOTRE DAME INTERMEDICA</field>
+            <field name="codigo_prodoctor">146</field>
+        </record>
+        <record id="convenios_77" model="convenios">
+            <field name="nome">ZFUNDAÇÃO CESP (UNIF)</field>
+            <field name="codigo_prodoctor">77</field>
+        </record>
+        <record id="convenios_194" model="convenios">
+            <field name="nome">ZEISS VISION</field>
+            <field name="codigo_prodoctor">194</field>
+        </record>
+        <record id="convenios_172" model="convenios">
+            <field name="nome">USISAUDE (PROGRAMA ATITUDE)</field>
+            <field name="codigo_prodoctor">172</field>
+        </record>
+        <record id="convenios_124" model="convenios">
+            <field name="nome">USISAUDE (FISIO)</field>
+            <field name="codigo_prodoctor">124</field>
+        </record>
+        <record id="convenios_139" model="convenios">
+            <field name="nome">USISÁUDE (CIRURGIA)</field>
+            <field name="codigo_prodoctor">139</field>
+        </record>
+        <record id="convenios_104" model="convenios">
+            <field name="nome">USISAUDE</field>
+            <field name="codigo_prodoctor">104</field>
+        </record>
+        <record id="convenios_166" model="convenios">
+            <field name="nome">UNIPREV</field>
+            <field name="codigo_prodoctor">166</field>
+        </record>
+        <record id="convenios_207" model="convenios">
+            <field name="nome">UNIMED CENTRAL NACIONAL INTERCAMBIO</field>
+            <field name="codigo_prodoctor">207</field>
+        </record>
+        <record id="convenios_209" model="convenios">
+            <field name="nome">UNIMED CENTRAL NACIONAL INTER(FISIOTERAPIA)</field>
+            <field name="codigo_prodoctor">209</field>
+        </record>
+        <record id="convenios_208" model="convenios">
+            <field name="nome">UNIMED CENTRAL NACIONAL INTER (SADT)</field>
+            <field name="codigo_prodoctor">208</field>
+        </record>
+        <record id="convenios_210" model="convenios">
+            <field name="nome">UNIMED CENTRAL NACIONAL INTER (CIRURGIA)</field>
+            <field name="codigo_prodoctor">210</field>
+        </record>
+        <record id="convenios_186" model="convenios">
+            <field name="nome">UNIMED CENTRAL NACIONAL (SADT)</field>
+            <field name="codigo_prodoctor">186</field>
+        </record>
+        <record id="convenios_187" model="convenios">
+            <field name="nome">UNIMED CENTRAL NACIONAL (FISIOTERAPIA)</field>
+            <field name="codigo_prodoctor">187</field>
+        </record>
+        <record id="convenios_188" model="convenios">
+            <field name="nome">UNIMED CENTRAL NACIONAL (CIRURGIA)</field>
+            <field name="codigo_prodoctor">188</field>
+        </record>
+        <record id="convenios_185" model="convenios">
+            <field name="nome">UNIMED CENTRAL NACIONAL</field>
+            <field name="codigo_prodoctor">185</field>
+        </record>
+        <record id="convenios_46" model="convenios">
+            <field name="nome">TAXA ÚNICA</field>
+            <field name="codigo_prodoctor">46</field>
+        </record>
+        <record id="convenios_179" model="convenios">
+            <field name="nome">SUL AMERICA INDIVIDUAL (FISIOTERAPIA)</field>
+            <field name="codigo_prodoctor">179</field>
+        </record>
+        <record id="convenios_138" model="convenios">
+            <field name="nome">SUL AMÉRICA INDIVIDUAL (CIRURGIA)</field>
+            <field name="codigo_prodoctor">138</field>
+        </record>
+        <record id="convenios_66" model="convenios">
+            <field name="nome">SUL AMERICA INDIVIDUAL</field>
+            <field name="codigo_prodoctor">66</field>
+        </record>
+        <record id="convenios_168" model="convenios">
+            <field name="nome">SUL AMERICA EMPRESARIAL (FISIOTERAPIA)</field>
+            <field name="codigo_prodoctor">168</field>
+        </record>
+        <record id="convenios_122" model="convenios">
+            <field name="nome">SUL AMÉRICA EMPRESARIAL (CIRURGIA)</field>
+            <field name="codigo_prodoctor">122</field>
+        </record>
+        <record id="convenios_64" model="convenios">
+            <field name="nome">SUL AMERICA EMPRESARIAL</field>
+            <field name="codigo_prodoctor">64</field>
+        </record>
+        <record id="convenios_114" model="convenios">
+            <field name="nome">SUL AMERICA 2º OPINIÃO</field>
+            <field name="codigo_prodoctor">114</field>
+        </record>
+        <record id="convenios_169" model="convenios">
+            <field name="nome">SR ÓCULOS</field>
+            <field name="codigo_prodoctor">169</field>
+        </record>
+        <record id="convenios_49" model="convenios">
+            <field name="nome">SINDUSCON</field>
+            <field name="codigo_prodoctor">49</field>
+        </record>
+        <record id="convenios_67" model="convenios">
+            <field name="nome">SINDICATO DOS METALURGICOS</field>
+            <field name="codigo_prodoctor">67</field>
+        </record>
+        <record id="convenios_88" model="convenios">
+            <field name="nome">SINCOMERCIO</field>
+            <field name="codigo_prodoctor">88</field>
+        </record>
+        <record id="convenios_90" model="convenios">
+            <field name="nome">SINCOMERCIÁRIOS</field>
+            <field name="codigo_prodoctor">90</field>
+        </record>
+        <record id="convenios_221" model="convenios">
+            <field name="nome">SET</field>
+            <field name="codigo_prodoctor">221</field>
+        </record>
+        <record id="convenios_89" model="convenios">
+            <field name="nome">SERPRO</field>
+            <field name="codigo_prodoctor">89</field>
+        </record>
+        <record id="convenios_142" model="convenios">
+            <field name="nome">SEGUROS UNIMED (FISIO)</field>
+            <field name="codigo_prodoctor">142</field>
+        </record>
+        <record id="convenios_141" model="convenios">
+            <field name="nome">SEGUROS UNIMED (CIRURGIA)</field>
+            <field name="codigo_prodoctor">141</field>
+        </record>
+        <record id="convenios_140" model="convenios">
+            <field name="nome">SEGUROS UNIMED</field>
+            <field name="codigo_prodoctor">140</field>
+        </record>
+        <record id="convenios_145" model="convenios">
+            <field name="nome">SÃO MIGUEL (FISIO)</field>
+            <field name="codigo_prodoctor">145</field>
+        </record>
+        <record id="convenios_144" model="convenios">
+            <field name="nome">SÃO MIGUEL (CIRURGIA)</field>
+            <field name="codigo_prodoctor">144</field>
+        </record>
+        <record id="convenios_143" model="convenios">
+            <field name="nome">SÃO MIGUEL</field>
+            <field name="codigo_prodoctor">143</field>
+        </record>
+        <record id="convenios_183" model="convenios">
+            <field name="nome">SANTA CASA SAÚDE - SÃO JOSÉ DOS CAMPOS (CIRURGIA)</field>
+            <field name="codigo_prodoctor">183</field>
+        </record>
+        <record id="convenios_184" model="convenios">
+            <field name="nome">SANTA CASA SAÚDE - SÃO JOSÉ DOS CAMPOS ( FISIO)</field>
+            <field name="codigo_prodoctor">184</field>
+        </record>
+        <record id="convenios_182" model="convenios">
+            <field name="nome">SANTA CASA SAÚDE - SÃO JOSÉ DOS CAMPOS</field>
+            <field name="codigo_prodoctor">182</field>
+        </record>
+        <record id="convenios_178" model="convenios">
+            <field name="nome">RX GRUPO AMIL</field>
+            <field name="codigo_prodoctor">178</field>
+        </record>
+        <record id="convenios_193" model="convenios">
+            <field name="nome">REAL GRANDEZA (SALVUS/SALUTEM) - FISIOTERAPIA</field>
+            <field name="codigo_prodoctor">193</field>
+        </record>
+        <record id="convenios_192" model="convenios">
+            <field name="nome">REAL GRANDEZA (SALVUS/SALUTEM)</field>
+            <field name="codigo_prodoctor">192</field>
+        </record>
+        <record id="convenios_171" model="convenios">
+            <field name="nome">REAL GRANDEZA (FISIOTERAPIA)</field>
+            <field name="codigo_prodoctor">171</field>
+        </record>
+        <record id="convenios_217" model="convenios">
+            <field name="nome">REAL GRANDEZA (AURUM)</field>
+            <field name="codigo_prodoctor">217</field>
+        </record>
+        <record id="convenios_218" model="convenios">
+            <field name="nome">REAL GRANDEZA (AURUM FISIOTERAPIA)</field>
+            <field name="codigo_prodoctor">218</field>
+        </record>
+        <record id="convenios_170" model="convenios">
+            <field name="nome">REAL GRANDEZA</field>
+            <field name="codigo_prodoctor">170</field>
+        </record>
+        <record id="convenios_133" model="convenios">
+            <field name="nome">PORTO SEGURO (PRATA) FISIO</field>
+            <field name="codigo_prodoctor">133</field>
+        </record>
+        <record id="convenios_132" model="convenios">
+            <field name="nome">PORTO SEGURO (PRATA) CIRURGIAS</field>
+            <field name="codigo_prodoctor">132</field>
+        </record>
+        <record id="convenios_131" model="convenios">
+            <field name="nome">PORTO SEGURO (PRATA)</field>
+            <field name="codigo_prodoctor">131</field>
+        </record>
+        <record id="convenios_136" model="convenios">
+            <field name="nome">PORTO SEGURO (OURO E DIAMANTE) FISIO</field>
+            <field name="codigo_prodoctor">136</field>
+        </record>
+        <record id="convenios_135" model="convenios">
+            <field name="nome">PORTO SEGURO (OURO E DIAMANTE) CIRURGIAS</field>
+            <field name="codigo_prodoctor">135</field>
+        </record>
+        <record id="convenios_134" model="convenios">
+            <field name="nome">PORTO SEGURO (OURO E DIAMANTE)</field>
+            <field name="codigo_prodoctor">134</field>
+        </record>
+        <record id="convenios_129" model="convenios">
+            <field name="nome">PORTO SEGURO (BRONZE) FISIO</field>
+            <field name="codigo_prodoctor">129</field>
+        </record>
+        <record id="convenios_130" model="convenios">
+            <field name="nome">PORTO SEGURO (BRONZE) CIRURGIAS</field>
+            <field name="codigo_prodoctor">130</field>
+        </record>
+        <record id="convenios_128" model="convenios">
+            <field name="nome">PORTO SEGURO (BRONZE)</field>
+            <field name="codigo_prodoctor">128</field>
+        </record>
+        <record id="convenios_199" model="convenios">
+            <field name="nome">PLENA SAUDE</field>
+            <field name="codigo_prodoctor">199</field>
+        </record>
+        <record id="convenios_70" model="convenios">
+            <field name="nome">PETROBRAS (SAUDE PETROBRAS)</field>
+            <field name="codigo_prodoctor">70</field>
+        </record>
+        <record id="convenios_215" model="convenios">
+            <field name="nome">PARTICULAR - MED SPORT</field>
+            <field name="codigo_prodoctor">215</field>
+        </record>
+        <record id="convenios_154" model="convenios">
+            <field name="nome">PARTICULAR - ESPECIAL</field>
+            <field name="codigo_prodoctor">154</field>
+        </record>
+        <record id="convenios_31" model="convenios">
+            <field name="nome">PARTICULAR</field>
+            <field name="codigo_prodoctor">31</field>
+        </record>
+        <record id="convenios_200" model="convenios">
+            <field name="nome">ÓTICAS CAROL</field>
+            <field name="codigo_prodoctor">200</field>
+        </record>
+        <record id="convenios_214" model="convenios">
+            <field name="nome">ÓTICA LUNICA</field>
+            <field name="codigo_prodoctor">214</field>
+        </record>
+        <record id="convenios_191" model="convenios">
+            <field name="nome">OMINT (FISIOTERAPIA)</field>
+            <field name="codigo_prodoctor">191</field>
+        </record>
+        <record id="convenios_190" model="convenios">
+            <field name="nome">OMINT (CIRURGIA)</field>
+            <field name="codigo_prodoctor">190</field>
+        </record>
+        <record id="convenios_189" model="convenios">
+            <field name="nome">OMINT</field>
+            <field name="codigo_prodoctor">189</field>
+        </record>
+        <record id="convenios_195" model="convenios">
+            <field name="nome">ÓCULOS CENTER</field>
+            <field name="codigo_prodoctor">195</field>
+        </record>
+        <record id="convenios_41" model="convenios">
+            <field name="nome">NOTRE DAME</field>
+            <field name="codigo_prodoctor">41</field>
+        </record>
+        <record id="convenios_167" model="convenios">
+            <field name="nome">MEDTOUR - BURNATO PACOTE</field>
+            <field name="codigo_prodoctor">167</field>
+        </record>
+        <record id="convenios_62" model="convenios">
+            <field name="nome">MEDISERVICE - PLANO REFERÊNCIA</field>
+            <field name="codigo_prodoctor">62</field>
+        </record>
+        <record id="convenios_120" model="convenios">
+            <field name="nome">MEDISERVICE - (CIRURGIA)</field>
+            <field name="codigo_prodoctor">120</field>
+        </record>
+        <record id="convenios_63" model="convenios">
+            <field name="nome">MEDISERVICE</field>
+            <field name="codigo_prodoctor">63</field>
+        </record>
+        <record id="convenios_81" model="convenios">
+            <field name="nome">MEDIAL</field>
+            <field name="codigo_prodoctor">81</field>
+        </record>
+        <record id="convenios_123" model="convenios">
+            <field name="nome">MED TOUR - FISIO</field>
+            <field name="codigo_prodoctor">123</field>
+        </record>
+        <record id="convenios_101" model="convenios">
+            <field name="nome">MED TOUR - BURNATO</field>
+            <field name="codigo_prodoctor">101</field>
+        </record>
+        <record id="convenios_48" model="convenios">
+            <field name="nome">MED TOUR</field>
+            <field name="codigo_prodoctor">48</field>
+        </record>
+        <record id="convenios_96" model="convenios">
+            <field name="nome">LINCX</field>
+            <field name="codigo_prodoctor">96</field>
+        </record>
+        <record id="convenios_197" model="convenios">
+            <field name="nome">LEADER FISIOTERAPIA</field>
+            <field name="codigo_prodoctor">197</field>
+        </record>
+        <record id="convenios_198" model="convenios">
+            <field name="nome">LEADER CIRURGIA</field>
+            <field name="codigo_prodoctor">198</field>
+        </record>
+        <record id="convenios_196" model="convenios">
+            <field name="nome">LEADER</field>
+            <field name="codigo_prodoctor">196</field>
+        </record>
+        <record id="convenios_202" model="convenios">
+            <field name="nome">IPREF (FISIOTERAPIA)</field>
+            <field name="codigo_prodoctor">202</field>
+        </record>
+        <record id="convenios_203" model="convenios">
+            <field name="nome">IPREF ( CIRURGIA )</field>
+            <field name="codigo_prodoctor">203</field>
+        </record>
+        <record id="convenios_201" model="convenios">
+            <field name="nome">IPREF</field>
+            <field name="codigo_prodoctor">201</field>
+        </record>
+        <record id="convenios_212" model="convenios">
+            <field name="nome">INTERCLINICAS (FISIOTERAPIA)</field>
+            <field name="codigo_prodoctor">212</field>
+        </record>
+        <record id="convenios_213" model="convenios">
+            <field name="nome">INTERCLINICAS (CIRURGIA)</field>
+            <field name="codigo_prodoctor">213</field>
+        </record>
+        <record id="convenios_211" model="convenios">
+            <field name="nome">INTERCLINICAS</field>
+            <field name="codigo_prodoctor">211</field>
+        </record>
+        <record id="convenios_44" model="convenios">
+            <field name="nome">HEALTH PLANNER/NIPOMED/HPGS</field>
+            <field name="codigo_prodoctor">44</field>
+        </record>
+        <record id="convenios_113" model="convenios">
+            <field name="nome">GEAP (FISIO)</field>
+            <field name="codigo_prodoctor">113</field>
+        </record>
+        <record id="convenios_181" model="convenios">
+            <field name="nome">GEAP (CIRURGIA)</field>
+            <field name="codigo_prodoctor">181</field>
+        </record>
+        <record id="convenios_112" model="convenios">
+            <field name="nome">GEAP</field>
+            <field name="codigo_prodoctor">112</field>
+        </record>
+        <record id="convenios_174" model="convenios">
+            <field name="nome">FUNDAÇÃO CESP - FUNCESP - VIVEST (CIRURGIA)</field>
+            <field name="codigo_prodoctor">174</field>
+        </record>
+        <record id="convenios_173" model="convenios">
+            <field name="nome">FUNDAÇÃO CESP - FUNCESP - VIVEST</field>
+            <field name="codigo_prodoctor">173</field>
+        </record>
+        <record id="convenios_55" model="convenios">
+            <field name="nome">FUNCIONÁRIOS - DEPENDENTES / PARENTES</field>
+            <field name="codigo_prodoctor">55</field>
+        </record>
+        <record id="convenios_34" model="convenios">
+            <field name="nome">EISSEI CARD</field>
+            <field name="codigo_prodoctor">34</field>
+        </record>
+        <record id="convenios_180" model="convenios">
+            <field name="nome">ECONOMY BRASIL</field>
+            <field name="codigo_prodoctor">180</field>
+        </record>
+        <record id="convenios_86" model="convenios">
+            <field name="nome">ECONOMUS - FISIOTERAPIA</field>
+            <field name="codigo_prodoctor">86</field>
+        </record>
+        <record id="convenios_87" model="convenios">
+            <field name="nome">ECONOMUS</field>
+            <field name="codigo_prodoctor">87</field>
+        </record>
+        <record id="convenios_118" model="convenios">
+            <field name="nome">DPVAT</field>
+            <field name="codigo_prodoctor">118</field>
+        </record>
+        <record id="convenios_2" model="convenios">
+            <field name="nome">DIX</field>
+            <field name="codigo_prodoctor">2</field>
+        </record>
+        <record id="convenios_45" model="convenios">
+            <field name="nome">COIFE ODONTO</field>
+            <field name="codigo_prodoctor">45</field>
+        </record>
+        <record id="convenios_39" model="convenios">
+            <field name="nome">CLUBE DIÁRIO</field>
+            <field name="codigo_prodoctor">39</field>
+        </record>
+        <record id="convenios_220" model="convenios">
+            <field name="nome">CLÍNICA MÉDICA SÃO JOSÉ</field>
+            <field name="codigo_prodoctor">220</field>
+        </record>
+        <record id="convenios_37" model="convenios">
+            <field name="nome">CIRGOASP</field>
+            <field name="codigo_prodoctor">37</field>
+        </record>
+        <record id="convenios_216" model="convenios">
+            <field name="nome">CEMO</field>
+            <field name="codigo_prodoctor">216</field>
+        </record>
+        <record id="convenios_219" model="convenios">
+            <field name="nome">CEMEAP</field>
+            <field name="codigo_prodoctor">219</field>
+        </record>
+        <record id="convenios_68" model="convenios">
+            <field name="nome">CASSI</field>
+            <field name="codigo_prodoctor">68</field>
+        </record>
+        <record id="convenios_206" model="convenios">
+            <field name="nome">BRADESCO OPERADORA FISIO</field>
+            <field name="codigo_prodoctor">206</field>
+        </record>
+        <record id="convenios_205" model="convenios">
+            <field name="nome">BRADESCO OPERADORA CIRURGIA</field>
+            <field name="codigo_prodoctor">205</field>
+        </record>
+        <record id="convenios_204" model="convenios">
+            <field name="nome">BRADESCO OPERADORA</field>
+            <field name="codigo_prodoctor">204</field>
+        </record>
+        <record id="convenios_52" model="convenios">
+            <field name="nome">BRADESCO INDIVIDUAL</field>
+            <field name="codigo_prodoctor">52</field>
+        </record>
+        <record id="convenios_84" model="convenios">
+            <field name="nome">BRADESCO FISIO</field>
+            <field name="codigo_prodoctor">84</field>
+        </record>
+        <record id="convenios_119" model="convenios">
+            <field name="nome">BRADESCO EMPRESARIAL (CIRURGIA)</field>
+            <field name="codigo_prodoctor">119</field>
+        </record>
+        <record id="convenios_54" model="convenios">
+            <field name="nome">BRADESCO EMPRESARIAL</field>
+            <field name="codigo_prodoctor">54</field>
+        </record>
+        <record id="convenios_69" model="convenios">
+            <field name="nome">BARDELLA</field>
+            <field name="codigo_prodoctor">69</field>
+        </record>
+        <record id="convenios_58" model="convenios">
+            <field name="nome">ASSOCIAÇÃO COMERCIAL</field>
+            <field name="codigo_prodoctor">58</field>
+        </record>
+        <record id="convenios_60" model="convenios">
+            <field name="nome">ARPEMEI</field>
+            <field name="codigo_prodoctor">60</field>
+        </record>
+        <record id="convenios_56" model="convenios">
+            <field name="nome">APEOESP</field>
+            <field name="codigo_prodoctor">56</field>
+        </record>
+        <record id="convenios_42" model="convenios">
+            <field name="nome">AMIL</field>
+            <field name="codigo_prodoctor">42</field>
+        </record>
+        <record id="convenios_116" model="convenios">
+            <field name="nome">ALLIANZ (TO/RPG)</field>
+            <field name="codigo_prodoctor">116</field>
+        </record>
+        <record id="convenios_117" model="convenios">
+            <field name="nome">ALLIANZ (CIRURGIA)</field>
+            <field name="codigo_prodoctor">117</field>
+        </record>
+        <record id="convenios_115" model="convenios">
+            <field name="nome">ALLIANZ</field>
+            <field name="codigo_prodoctor">115</field>
+        </record>
+        <record id="convenios_38" model="convenios">
+            <field name="nome">AEAMC</field>
+            <field name="codigo_prodoctor">38</field>
+        </record>
+    </data>
+</odoo>

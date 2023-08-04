@@ -1,0 +1,68 @@
+<odoo>
+    <data>
+        <!-- Menu Item -->
+        <menuitem id="menu_doctor" name="Doctors" sequence="10" web_icon="doctor,static/description/icon.png"/>
+        <!-- Tree View -->
+        <record model="ir.ui.view" id="view_doctor_tree">
+            <field name="name">doctor.tree</field>
+            <field name="model">doctor</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="data_comeco"/>
+                    <field name="data_fim"/>
+                    <field name="convenio_id"/>
+                    <field name="medico_id"/>
+                    <field name="raiox_ids"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Form View -->
+        <record model="ir.ui.view" id="view_doctor_form">
+            <field name="name">doctor.form</field>
+            <field name="model">doctor</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="2">
+                            <field name="data_comeco"/>
+                            <field name="data_fim"/>
+                        </group>
+                        <group>
+                            <field name="convenio_id"/>
+                            <field name="medico_id"/>
+                        </group>
+                        <group>
+                            <field name="raiox_ids"/>
+                        </group>
+                        <group colspan="4">
+                            <field name="pacientes_contas_procedimentos_ids" context="{'show_invisible': 1}"/>
+                        </group>
+                        <footer>
+                            <button name="compute_pacientes_contas_procedimentos"
+                                    string="Carregar Dados Externos"
+                                    type="object"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Action -->
+        <record model="ir.actions.act_window" id="action_doctor">
+            <field name="name">Doctors</field>
+            <field name="res_model">doctor</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_doctor_tree"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Adicione um novo fechamento.
+                </p>
+            </field>
+        </record>
+
+        <!-- Define the menu item to access the view -->
+        <menuitem id="menu_doctor_tree" name="Doctors" parent="menu_doctor" action="action_doctor" sequence="10"/>
+
+    </data>
+</odoo>

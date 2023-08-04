@@ -1,0 +1,48 @@
+<odoo>
+    <data>
+        <!-- Define the view -->
+        <record model="ir.ui.view" id="view_convenios_tree">
+            <field name="name">convenios.tree</field>
+            <field name="model">convenios</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nome"/>
+                    <field name="codigo_prodoctor"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_convenios_form">
+            <field name="name">convenios.form</field>
+            <field name="model">convenios</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="nome"/>
+                            <field name="codigo_prodoctor"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Define the action to show the view -->
+        <record model="ir.actions.act_window" id="action_convenios">
+            <field name="name">Convênios</field>
+            <field name="res_model">convenios</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_convenios_tree"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to add a new convênio.
+                </p>
+            </field>
+        </record>
+
+        <!-- Define the menu item to access the view -->
+        <menuitem id="menu_convenios" name="Convênios" parent="menu_doctor" sequence="30"/>
+        <menuitem id="menu_convenios_tree" name="Convênios"
+                  parent="menu_convenios" action="action_convenios" sequence="10"/>
+    </data>
+</odoo>

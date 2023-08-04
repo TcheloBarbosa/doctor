@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="especialidade_1" model="especialidade">
+            <field name="nome">Ortopedia</field>
+        </record>
+        <record id="especialidade_2" model="especialidade">
+            <field name="nome">Fisioterapia</field>
+        </record>
+        <record id="especialidade_3" model="especialidade">
+            <field name="nome">Dermatologia</field>
+        </record>
+        <record id="especialidade_4" model="especialidade">
+            <field name="nome">Oftalmologia</field>
+        </record>
+        <record id="especialidade_5" model="especialidade">
+            <field name="nome">Acupuntura</field>
+        </record>
+        <record id="especialidade_6" model="especialidade">
+            <field name="nome">RPG</field>
+        </record>
+        <record id="especialidade_7" model="especialidade">
+            <field name="nome">Pilates</field>
+        </record>
+        <record id="especialidade_8" model="especialidade">
+            <field name="nome">Reumatologia</field>
+        </record>
+        <record id="especialidade_9" model="especialidade">
+            <field name="nome">Especialidades</field>
+        </record>
+    </data>
+</odoo>
+

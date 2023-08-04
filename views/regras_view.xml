@@ -1,0 +1,78 @@
+<!-- views/especificas_view.xml -->
+<odoo>
+    <data>
+        <record id="view_regras_form" model="ir.ui.view">
+            <field name="name">regras.form</field>
+            <field name="model">regras</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <!-- Destaque para o campo usuario_prodoctor -->
+                        <group>
+                            <separator string="Informações do Usuário Prodoctor"/>
+                            <field name="usuario_prodoctor"/>
+                        </group>
+
+                        <!-- Quadro com dados gerais -->
+                        <group>
+                            <field name="consulta_percentual"/>
+                            <field name="consulta"/>
+                            <field name="hon_medicos_percentual"/>
+                            <field name="honorarios_medicos"/>
+                            <field name="honorarios_cirurgicos"/>
+                            <field name="hon_cirurgicos_percentual"/>
+                            <field name="imposto"/>
+                            <field name="administracao"/>
+                            <field name="socio"/>
+                        </group>
+
+                        <!-- Quadro com regra específica -->
+                        <notebook>
+                            <page string="Regra Específica">
+                                <field name="especifica_id"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- Tree View -->
+        <record id="view_regras_tree" model="ir.ui.view">
+            <field name="name">regras.tree</field>
+            <field name="model">regras</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="usuario_prodoctor" widget="many2many_tags"/>
+                    <field name="consulta"/>
+                    <field name="hon_medicos_percentual"/>
+                    <field name="consulta_percentual"/>
+                    <field name="honorarios_medicos"/>
+                    <field name="honorarios_cirurgicos"/>
+                    <field name="hon_cirurgicos_percentual"/>
+                    <field name="imposto"/>
+                    <field name="administracao"/>
+                    <field name="socio"/>
+                    <field name="especifica_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_regras" model="ir.actions.act_window">
+            <field name="name">Regras</field>
+            <field name="res_model">regras</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Crie a primeira regra
+                </p>
+            </field>
+        </record>
+
+        <!-- Menu Item -->
+        <menuitem id="menu_regras" name="Regras" parent="menu_doctor" sequence="40"/>
+        <menuitem id="menu_regras_list" name="Regras" parent="menu_regras" action="action_regras"/>
+    </data>
+</odoo>
