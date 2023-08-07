@@ -1,0 +1,42 @@
+<odoo>
+    <data>
+        <!-- Define a view para a lista de procedimentos -->
+        <record id="view_procedimentos_tree" model="ir.ui.view">
+            <field name="name">procedimentos.tree</field>
+            <field name="model">procedimentos</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="codigoamb"/>
+                    <field name="especialidade_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Define a view para o formulário de procedimentos -->
+        <record id="view_procedimentos_form" model="ir.ui.view">
+            <field name="name">procedimentos.form</field>
+            <field name="model">procedimentos</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="codigoamb"/>
+                            <field name="especialidade_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Define ação para exibir a lista de procedimentos -->
+        <record id="action_procedimentos" model="ir.actions.act_window">
+            <field name="name">Procedimentos</field>
+            <field name="res_model">procedimentos</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Define o submenu para acessar a lista de procedimentos -->
+        <menuitem id="menu_procedimentos" name="Procedimentos" parent="menu_doctor_config"
+                  sequence="30" action="action_procedimentos"/>
+    </data>
+</odoo>

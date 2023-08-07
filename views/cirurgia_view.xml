@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+
+        <record id="view_cirurgia_tree" model="ir.ui.view">
+            <field name="name">cirurgia.tree</field>
+            <field name="model">cirurgia</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="conta"/>
+                    <field name="data_conta"/>
+                    <field name="descricaoamb"/>
+                    <field name="valor_original" widget="monetary"/>
+                    <field name="medico_id"/>
+                    <field name="valor_medico" widget="monetary"/>
+                    <field name="valor_glosa" widget="monetary"/>
+                    <field name="valor_imposto" widget="monetary"/>
+                    <field name="valor_administracao" widget="monetary"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_cirurgia_form" model="ir.ui.view">
+            <field name="name">cirurgia.form</field>
+            <field name="model">cirurgia</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="conta"/>
+                            <field name="data_conta"/>
+                            <field name="descricaoamb"/>
+                            <field name="valor_original" widget="monetary"/>
+                            <field name="medico_id"/>
+                            <field name="valor_medico" widget="monetary"/>
+                            <field name="valor_glosa" widget="monetary"/>
+                            <field name="valor_imposto" widget="monetary"/>
+                            <field name="valor_administracao" widget="monetary"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_cirurgia" model="ir.actions.act_window">
+            <field name="name">Cirurgias</field>
+            <field name="res_model">cirurgia</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

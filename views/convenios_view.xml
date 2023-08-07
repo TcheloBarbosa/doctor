@@ -41,8 +41,7 @@
         </record>
 
         <!-- Define the menu item to access the view -->
-        <menuitem id="menu_convenios" name="Convênios" parent="menu_doctor" sequence="30"/>
         <menuitem id="menu_convenios_tree" name="Convênios"
-                  parent="menu_convenios" action="action_convenios" sequence="10"/>
+                  parent="menu_doctor_config" action="action_convenios" sequence="10"/>
     </data>
 </odoo>

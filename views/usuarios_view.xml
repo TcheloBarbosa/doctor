@@ -1,0 +1,44 @@
+<odoo>
+    <data>
+        <!-- Define a view para a lista de usuários -->
+        <record id="view_usuarios_tree" model="ir.ui.view">
+            <field name="name">usuarios.tree</field>
+            <field name="model">usuarios</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nome"/>
+                    <field name="codigo_prodoctor"/>
+                    <field name="especialidade_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Define a view para o formulário de usuários -->
+        <record id="view_usuarios_form" model="ir.ui.view">
+            <field name="name">usuarios.form</field>
+            <field name="model">usuarios</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="nome"/>
+                            <field name="codigo_prodoctor"/>
+                            <field name="especialidade_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Define ação para exibir a lista de usuários -->
+        <record id="action_usuarios" model="ir.actions.act_window">
+            <field name="name">Usuários</field>
+            <field name="res_model">usuarios</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Define o submenu para acessar a lista de usuários -->
+        <menuitem id="menu_usuarios" name="Usuários" parent="menu_doctor_config"
+                  sequence="30" action="action_usuarios"/>
+    </data>
+</odoo>

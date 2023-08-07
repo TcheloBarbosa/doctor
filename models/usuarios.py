@@ -8,5 +8,5 @@ class Usuarios(models.Model):
     # Fields
     nome = fields.Char(string='Nome')
     codigo_prodoctor = fields.Integer("Código ProDoctor")
-    especialidade = fields.Many2one("especialidade", string='Especialidade')
+    especialidade_id = fields.Many2one("especialidade", string='Especialidade')
     _rec_name = 'nome'

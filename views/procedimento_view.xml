@@ -1,0 +1,60 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_procedimento_tree">
+            <field name="name">procedimento.tree</field>
+            <field name="model">procedimento</field>
+            <field name="arch" type="xml">
+                <tree string="Procedimentos">
+                    <field name="conta"/>
+                    <field name="data_conta"/>
+                    <field name="descricaoamb"/>
+                    <field name="valor_original"/>
+                    <field name="medico_id"/>
+                    <field name="valor_medico"/>
+                    <field name="valor_glosa"/>
+                    <field name="valor_imposto"/>
+                    <field name="valor_administracao"/>
+                    <field name="valor_repasse"/>
+                    <field name="usuario_repasse_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- View Formulário do Procedimento -->
+        <record model="ir.ui.view" id="view_procedimento_form">
+            <field name="name">procedimento.form</field>
+            <field name="model">procedimento</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="conta"/>
+                            <field name="data_conta"/>
+                            <field name="descricaoamb"/>
+                            <field name="valor_original"/>
+                        </group>
+                        <group>
+                            <field name="medico_id"/>
+                            <field name="valor_medico"/>
+                            <field name="valor_glosa"/>
+                        </group>
+                        <group>
+                            <field name="valor_imposto"/>
+                            <field name="valor_administracao"/>
+                            <field name="valor_repasse"/>
+                            <field name="usuario_repasse_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action Window para Abrir o Formulário -->
+        <record model="ir.actions.act_window" id="action_procedimento_form">
+            <field name="name">Procedimentos</field>
+            <field name="res_model">procedimento</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,97 @@
+<template id="relatorio_doctor">
+    <t t-call="web.html_container">
+        <t t-foreach="doc" t-as="doctor">
+            <div class="page">
+                <h2>Relatório do Doctor</h2>
+                <p>Data de Começo: <t t-esc="doctor.data_comeco"/></p>
+                <p>Data Fim: <t t-esc="doctor.data_fim"/></p>
+                <p>Convênio: <t t-esc="doctor.convenio_id.name"/></p>
+                <p>Médico: <t t-esc="doctor.medico_id.name"/></p>
+                <h3>Lista de RaioX</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Conta</th>
+                            <th>Data da Conta</th>
+                            <!-- Adicione outros cabeçalhos dos campos de RaioX, se houver -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="doctor.raiox_ids" t-as="raiox">
+                            <tr>
+                                <td><t t-esc="raiox.conta"/></td>
+                                <td><t t-esc="raiox.data_conta"/></td>
+                                <!-- Adicione outros campos de RaioX, se houver -->
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+
+                <!-- Repita o mesmo padrão para outras listas one2many -->
+                <h3>Lista de Cirurgias</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Conta</th>
+                            <th>Data da Conta</th>
+                            <!-- Adicione outros cabeçalhos dos campos de Cirurgia, se houver -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="doctor.cirurgia_ids" t-as="cirurgia">
+                            <tr>
+                                <td><t t-esc="cirurgia.conta"/></td>
+                                <td><t t-esc="cirurgia.data_conta"/></td>
+                                <!-- Adicione outros campos de Cirurgia, se houver -->
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+
+                <!-- Repita o mesmo padrão para outras listas one2many -->
+                <!-- Lista de Procedimentos -->
+                <h3>Lista de Procedimentos</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Conta</th>
+                            <th>Data da Conta</th>
+                            <!-- Adicione outros cabeçalhos dos campos de Procedimento, se houver -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="doctor.procedimento_ids" t-as="procedimento">
+                            <tr>
+                                <td><t t-esc="procedimento.conta"/></td>
+                                <td><t t-esc="procedimento.data_conta"/></td>
+                                <!-- Adicione outros campos de Procedimento, se houver -->
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+
+                <!-- Repita o mesmo padrão para outras listas one2many -->
+                <!-- Lista de Consultas -->
+                <h3>Lista de Consultas</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Conta</th>
+                            <th>Data da Conta</th>
+                            <!-- Adicione outros cabeçalhos dos campos de Consulta, se houver -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="doctor.consulta_ids" t-as="consulta">
+                            <tr>
+                                <td><t t-esc="consulta.conta"/></td>
+                                <td><t t-esc="consulta.data_conta"/></td>
+                                <!-- Adicione outros campos de Consulta, se houver -->
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </t>
+    </t>
+</template>

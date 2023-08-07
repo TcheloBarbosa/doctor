@@ -1,8 +1,8 @@
 from odoo import models, fields
 
-class Cirurgias(models.Model):
-    _name = 'cirurgias'
-    _description = 'Cirurgias'
+class Procedimentos(models.Model):
+    _name = 'procedimentos'
+    _description = 'Procedimentos'
 
     # Fields
     codigoamb = fields.Char(string='Nome')

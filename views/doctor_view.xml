@@ -1,7 +1,7 @@
 <odoo>
     <data>
         <!-- Menu Item -->
-        <menuitem id="menu_doctor" name="Doctors" sequence="10" web_icon="doctor,static/description/icon.png"/>
+        <menuitem id="menu_doctor" name="DoctorPro" sequence="10" web_icon="doctor,static/description/icon.png"/>
         <!-- Tree View -->
         <record model="ir.ui.view" id="view_doctor_tree">
             <field name="name">doctor.tree</field>
@@ -22,26 +22,40 @@
             <field name="model">doctor</field>
             <field name="arch" type="xml">
                 <form>
+<!--                    <header>-->
+<!--                        <button name="relatorio_doctor" string="Imprimir Relatório" type="object"/>-->
+<!--                    </header>-->
                     <sheet>
-                        <group col="2">
-                            <field name="data_comeco"/>
-                            <field name="data_fim"/>
-                        </group>
+                        <button name="compute_pacientes_contas_procedimentos"
+                                string="Carregar Dados Externos"
+                                type="object"/>
+                        <button name="mostrar_tudo" string="Mostrar/Ocultar" type="object"/>
                         <group>
-                            <field name="convenio_id"/>
-                            <field name="medico_id"/>
+                            <group col="2">
+                                <field name="oculta_tree" invisible="True"/>
+                                <field name="data_comeco"/>
+                                <field name="data_fim"/>
+                            </group>
+                            <group col="3">
+                                <field name="convenio_id"/>
+                                <field name="medico_id"/>
+                            </group>
                         </group>
-                        <group>
-                            <field name="raiox_ids"/>
-                        </group>
-                        <group colspan="4">
-                            <field name="pacientes_contas_procedimentos_ids" context="{'show_invisible': 1}"/>
-                        </group>
-                        <footer>
-                            <button name="compute_pacientes_contas_procedimentos"
-                                    string="Carregar Dados Externos"
-                                    type="object"/>
-                        </footer>
+                        <separator/>
+                        <label for="raiox_ids" string="Lista de RaioX"/>
+                        <field name="raiox_ids" col="12"/>
+                        <separator/>
+                        <label for="cirurgia_ids" string="Lista de Cirurgia"/>
+                        <field name="cirurgia_ids" col="12"/>
+                        <separator/>
+                        <label for="procedimento_ids" string="Lista de Procedimentos"/>
+                        <field name="procedimento_ids" col="12"/>
+                        <separator/>
+                        <label for="consulta_ids" string="Lista de Consultas"/>
+                        <field name="consulta_ids" col="12"/>
+                        <separator/>
+                        <label for="pacientes_contas_procedimentos_ids" string="Lista de Procedimentos" attrs="{'invisible': [('oculta_tree', '=', True)]}"/>
+                        <field name="pacientes_contas_procedimentos_ids" col="12" attrs="{'invisible': [('oculta_tree', '=', True)]}"/>
                     </sheet>
                 </form>
             </field>
@@ -61,8 +75,14 @@
             </field>
         </record>
 
-        <!-- Define the menu item to access the view -->
-        <menuitem id="menu_doctor_tree" name="Doctors" parent="menu_doctor" action="action_doctor" sequence="10"/>
+<!--        <record id="relatorio_doctor_report" model="ir.actions.report">-->
+<!--            <field name="name">Relatório do Doctor</field>-->
+<!--            <field name="model">doctor</field>-->
+<!--            <field name="report_type">qweb-pdf</field>-->
+<!--            <field name="report_name">doctor.relatorio_doctor</field>-->
+<!--        </record>-->
+        <menuitem id="menu_doctor_tree" name="Fechamentos" parent="menu_doctor" action="action_doctor"/>
+        <menuitem id="menu_doctor_config" name="Apoio" parent="menu_doctor"/>
 
     </data>
 </odoo>

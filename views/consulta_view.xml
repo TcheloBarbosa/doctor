@@ -1,0 +1,60 @@
+<odoo>
+    <data>
+
+        <!-- Form View -->
+        <record model="ir.ui.view" id="consulta_form_view">
+            <field name="name">consulta.form</field>
+            <field name="model">consulta</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="conta"/>
+                            <field name="data_conta"/>
+                            <field name="hora" widget="time"/>
+                            <field name="valor_original"/>
+                            <field name="medico_id"/>
+                            <field name="valor_medico"/>
+                            <field name="valor_glosa"/>
+                            <field name="valor_imposto"/>
+                            <field name="valor_administracao"/>
+                            <field name="valor_repasse"/>
+                            <field name="usuario_repasse_id"/>
+                            <field name="doctor_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree View -->
+        <record model="ir.ui.view" id="consulta_tree_view">
+            <field name="name">consulta.tree</field>
+            <field name="model">consulta</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="conta"/>
+                    <field name="data_conta"/>
+                    <field name="hora" widget="time"/>
+                    <field name="valor_original"/>
+                    <field name="medico_id"/>
+                    <field name="valor_medico"/>
+                    <field name="valor_glosa"/>
+                    <field name="valor_imposto"/>
+                    <field name="valor_administracao"/>
+                    <field name="valor_repasse"/>
+                    <field name="usuario_repasse_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record model="ir.actions.act_window" id="consulta_action">
+            <field name="name">Consultas</field>
+            <field name="res_model">consulta</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="consulta_tree_view"/>
+        </record>
+
+    </data>
+</odoo>

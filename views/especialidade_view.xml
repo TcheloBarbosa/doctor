@@ -1,0 +1,36 @@
+<odoo>
+    <data>
+        <record id="view_especialidade_tree" model="ir.ui.view">
+            <field name="name">especialidade.tree</field>
+            <field name="model">especialidade</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nome"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_especialidade_form" model="ir.ui.view">
+            <field name="name">especialidade.form</field>
+            <field name="model">especialidade</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="nome"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_especialidade" model="ir.actions.act_window">
+            <field name="name">Especialidades</field>
+            <field name="res_model">especialidade</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_especialidade" name="Especialidades" parent="menu_doctor_config" action="action_especialidade"/>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,42 @@
+<odoo>
+    <data>
+        <!-- Define a view para a lista de cirurgias -->
+        <record id="view_cirurgias_tree" model="ir.ui.view">
+            <field name="name">cirurgias.tree</field>
+            <field name="model">cirurgias</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="codigoamb"/>
+                    <field name="especialidade_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Define a view para o formulário de cirurgias -->
+        <record id="view_cirurgias_form" model="ir.ui.view">
+            <field name="name">cirurgias.form</field>
+            <field name="model">cirurgias</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="codigoamb"/>
+                            <field name="especialidade_id"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Define ação para exibir a lista de cirurgias -->
+        <record id="action_cirurgias" model="ir.actions.act_window">
+            <field name="name">Cirurgias</field>
+            <field name="res_model">cirurgias</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Define o submenu para acessar a lista de cirurgias -->
+        <menuitem id="menu_cirurgias" name="Cirurgias" parent="menu_doctor_config"
+                  sequence="30" action="action_cirurgias"/>
+    </data>
+</odoo>
