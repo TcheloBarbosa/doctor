@@ -64,6 +64,7 @@ class Doctor(models.Model):
 
     ###################################
     def valida_hora(self, lista_consultas, regra):
+        lista_hr = []
         for dia in lista_consultas.mapped('data_conta'):
             contador = 0
             lista_hr = lista_consultas.filtered(lambda r: r.data_conta == dia).sorted(key=lambda r: r.hora)
