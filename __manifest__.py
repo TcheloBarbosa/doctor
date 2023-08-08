@@ -5,7 +5,13 @@
     'summary': 'Módulo para processamento e gerenciamento das informações referentes ao ProDoctor',
     'author': ['Marcelo Barbosa dos Santos'],
     'depends': ['base'],
+    'external_dependencies': {
+        'python': [
+            'sqlalchemy'
+        ], },
     'data': [
+        'security\doctor_security.xml',
+        'security\ir.model.access.csv',
         'data\especialidade.xml',
         'data\convenios.xml',
         'data\\usuarios.xml',
